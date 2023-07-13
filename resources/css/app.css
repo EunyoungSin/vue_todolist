@@ -1,0 +1,16 @@
+.button {
+    margin: 5px;
+    cursor: pointer;
+}
+
+#text {
+    width: 250px;
+}
+
+.content {
+    width: 250px;
+}
+
+.post-content {
+    display: flex;
+}
