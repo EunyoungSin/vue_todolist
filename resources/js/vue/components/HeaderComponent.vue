@@ -1,10 +1,11 @@
 <template>
-    <div>
-        <div>
-            <input type="text" name="text" id="text" placeholder="할 일을 적어주세요." autocomplete="off" required>
-            <button @click="$store.dispatch('writeContent');" class="button">등록</button>
-        </div>
+<div class="app-container" id="taskList">
+    <h1 class="app-header">TO DO LIST</h1>
+    <div class="add-task">
+        <input type="text" name="text" id="text" class="task-input" placeholder="Add New Task" autocomplete="off" required>
+        <button @click="$store.dispatch('writeContent');" class="submit-task"></button>
     </div>
+</div>
 </template>
 <script>
 export default {

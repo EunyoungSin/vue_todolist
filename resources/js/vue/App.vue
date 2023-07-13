@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <h1>TO DO LIST</h1>
+    <div class="app-container" id="taskList">
         <HeaderComponent></HeaderComponent>
         <ListComponent></ListComponent>
     </div>

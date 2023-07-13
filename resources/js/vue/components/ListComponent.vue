@@ -1,18 +1,21 @@
 <template>
-    <br>
-    <div class="post" v-for="item in $store.state.ListData" :key="item">
-        <div class="post-content">
-            <div class="content" v-if="item.completed == false" >
-                <input type="checkbox" @click="$store.dispatch('completeContent', item.id)" v-bind="{ 'checked': item.completed }">
-                {{ item.content }}
+    <ul class="task-list" v-for="item in $store.state.ListData" :key="item">
+        <li class="task-list-item">
+            <div class="content" v-if="item.completed == false">
+                <label class="task-list-item-label">
+                    <input type="checkbox" @click="$store.dispatch('completeContent', item.id)" v-bind="{ 'checked': item.completed }">
+                    {{ item.content }}
+                </label>
             </div>
-            <div class="content" v-if="item.completed == true" >
-                <input type="checkbox" @click="$store.dispatch('cancelContent', item.id)" v-bind="{ 'checked': item.completed }">
-                {{ item.content }}
+            <div class="content" v-if="item.completed == true">
+                <label class="task-list-item-label" id="checkbox">
+                    <input type="checkbox" @click="$store.dispatch('cancelContent', item.id)" v-bind="{ 'checked': item.completed }">
+                    {{ item.content }}
+                </label>
             </div>
-            <button @click="$store.dispatch('deleteContent', item.id)" class="button">삭제</button>
-        </div>
-    </div>
+            <button @click="$store.dispatch('deleteContent', item.id)" class="delete-btn"></button>
+        </li>
+    </ul>
 </template>
 <script>
 export default {
