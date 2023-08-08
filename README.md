@@ -2,7 +2,7 @@
 ![뷰](https://github.com/EunyoungSin/vue_todolist/assets/126547900/977b6ab3-cbbe-4612-b18f-d28e809f04f1)
 
 ## 제작과정
-__주제__ | Vue.js + Laravel를 활용하여 RESTful API로 구현한 TO DO LIST<br>
+__주제__ | Vue.js + Laravel을 활용하여 RESTful API로 구현한 TO DO LIST<br>
 __작업기간__ | 2023-07-13<br>
 
 ## 개발환경
